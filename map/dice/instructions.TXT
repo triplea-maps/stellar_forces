@@ -1,0 +1,3 @@
+#hit = uses best dice image possible, size 32x32
+#dice = (uses #_hit as a model) size 28x28, -10 brightness, -50 saturation, 175 opacity
+#ignored = (using #_hit as a model) size 24x24, sepia color transformation, 100 opacity
