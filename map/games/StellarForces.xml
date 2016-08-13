@@ -14037,7 +14037,7 @@
     <property name="Shore Bombard Per Ground Unit Restricted" value="true" editable="true">
       <boolean/>
     </property>
-    <property name="Naval Bombard Casualties Return Fire Restricted" value="false" editable="false">
+    <property name="Naval Bombard Casualties Return Fire" value="false" editable="false">
       <boolean/>
     </property>
     <!-- allows transport units to die under ww2v3 type rules -->
