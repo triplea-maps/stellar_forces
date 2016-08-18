@@ -1000,7 +1000,7 @@
       <option name="attack" value="4"/>
       <option name="defense" value="4"/>
       <option name="defenseRolls" value="2"/>
-      <option name="isTwoHit" value="true"/>
+      <option name="hitPoints" value="2"/>
       <option name="isSea" value="true"/>
       <option name="givesMovement" value="1:cruiser1"/>
       <option name="givesMovement" value="1:cruiser3"/>
@@ -1044,7 +1044,7 @@
       <option name="defense" value="3"/>
       <option name="defenseRolls" value="1"/>
       <option name="canBombard" value="true"/>
-      <option name="isTwoHit" value="true"/>
+      <option name="hitPoints" value="2"/>
       <option name="Bombard" value="1"/>
       <option name="givesMovement" value="2:armament"/>
       <option name="createsUnitsList" value="1:mines"/>
@@ -1057,7 +1057,7 @@
       <option name="defense" value="3"/>
       <option name="defenseRolls" value="1"/>
       <option name="canBombard" value="true"/>
-      <option name="isTwoHit" value="true"/>
+      <option name="hitPoints" value="2"/>
       <option name="Bombard" value="1"/>
       <option name="givesMovement" value="2:armament"/>
       <option name="createsUnitsList" value="1:mines"/>
@@ -1070,7 +1070,7 @@
       <option name="defense" value="3"/>
       <option name="defenseRolls" value="1"/>
       <option name="canBombard" value="true"/>
-      <option name="isTwoHit" value="true"/>
+      <option name="hitPoints" value="2"/>
       <option name="Bombard" value="1"/>
       <option name="givesMovement" value="3:armament"/>
       <option name="createsUnitsList" value="1:mines"/>
@@ -1083,7 +1083,7 @@
       <option name="defense" value="3"/>
       <option name="defenseRolls" value="1"/>
       <option name="canBombard" value="true"/>
-      <option name="isTwoHit" value="true"/>
+      <option name="hitPoints" value="2"/>
       <option name="Bombard" value="1"/>
       <option name="givesMovement" value="3:armament"/>
       <option name="createsUnitsList" value="1:mines"/>
@@ -3704,11 +3704,11 @@
     <!-- TRIGGERS AND CONDITIONS -->
     <!-- ULTIMATE CONDITION -->
     <attachment name="conditionAttachmentALL" attachTo="AI_GALAXY" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="1-+"/>
+      <option name="rounds" value="1-+"/>
     </attachment>
     <!-- GAME LOADING -->
     <attachment name="conditionAttachmentR1" attachTo="AI_GALAXY" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="1"/>
+      <option name="rounds" value="1"/>
     </attachment>
     <attachment name="triggerAttachmentGLremover" attachTo="AI_GALAXY" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="trigger" value="conditionAttachmentR1"/>
@@ -3717,7 +3717,7 @@
     </attachment>
     <!-- GALAXY PUs Remover -->
     <attachment name="conditionAttachmentALLturns" attachTo="AI_GALAXY" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="1-7"/>
+      <option name="rounds" value="1-7"/>
     </attachment>
     <attachment name="triggerAttachmentGalaxyPuRemover" attachTo="AI_GALAXY" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="trigger" value="conditionAttachmentALLturns"/>
@@ -3727,16 +3727,16 @@
     </attachment>
     <!-- POPULATION GROWTH CYCLE -->
     <attachment name="conditionAttachmentCONpopI" attachTo="Confederation" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="1:5:9:13:17:21:25:29:33:37:41:45:49:53:57:61:65:69:73:77:81:85:89:93:97"/>
+      <option name="rounds" value="1:5:9:13:17:21:25:29:33:37:41:45:49:53:57:61:65:69:73:77:81:85:89:93:97"/>
     </attachment>
     <attachment name="conditionAttachmentEMPpopI" attachTo="Empire" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="1:5:9:13:17:21:25:29:33:37:41:45:49:53:57:61:65:69:73:77:81:85:89:93:97"/>
+      <option name="rounds" value="1:5:9:13:17:21:25:29:33:37:41:45:49:53:57:61:65:69:73:77:81:85:89:93:97"/>
     </attachment>
     <attachment name="conditionAttachmentMEGpopI" attachTo="MegaCorp" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="1:5:9:13:17:21:25:29:33:37:41:45:49:53:57:61:65:69:73:77:81:85:89:93:97"/>
+      <option name="rounds" value="1:5:9:13:17:21:25:29:33:37:41:45:49:53:57:61:65:69:73:77:81:85:89:93:97"/>
     </attachment>
     <attachment name="conditionAttachmentREPpopI" attachTo="Republic" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="1:5:9:13:17:21:25:29:33:37:41:45:49:53:57:61:65:69:73:77:81:85:89:93:97"/>
+      <option name="rounds" value="1:5:9:13:17:21:25:29:33:37:41:45:49:53:57:61:65:69:73:77:81:85:89:93:97"/>
     </attachment>
     <attachment name="triggerAttachmentCONpopItrig" attachTo="Confederation" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="trigger" value="conditionAttachmentCONpopI"/>
@@ -3759,16 +3759,16 @@
       <option name="when" value="after:RepublicPlace"/>
     </attachment>
     <attachment name="conditionAttachmentCONpopII" attachTo="Confederation" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="2:6:10:14:18:22:26:30:34:38:42:46:50:54:58:62:66:70:74:78:82:86:90:94:98"/>
+      <option name="rounds" value="2:6:10:14:18:22:26:30:34:38:42:46:50:54:58:62:66:70:74:78:82:86:90:94:98"/>
     </attachment>
     <attachment name="conditionAttachmentEMPpopII" attachTo="Empire" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="2:6:10:14:18:22:26:30:34:38:42:46:50:54:58:62:66:70:74:78:82:86:90:94:98"/>
+      <option name="rounds" value="2:6:10:14:18:22:26:30:34:38:42:46:50:54:58:62:66:70:74:78:82:86:90:94:98"/>
     </attachment>
     <attachment name="conditionAttachmentMEGpopII" attachTo="MegaCorp" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="2:6:10:14:18:22:26:30:34:38:42:46:50:54:58:62:66:70:74:78:82:86:90:94:98"/>
+      <option name="rounds" value="2:6:10:14:18:22:26:30:34:38:42:46:50:54:58:62:66:70:74:78:82:86:90:94:98"/>
     </attachment>
     <attachment name="conditionAttachmentREPpopII" attachTo="Republic" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="2:6:10:14:18:22:26:30:34:38:42:46:50:54:58:62:66:70:74:78:82:86:90:94:98"/>
+      <option name="rounds" value="2:6:10:14:18:22:26:30:34:38:42:46:50:54:58:62:66:70:74:78:82:86:90:94:98"/>
     </attachment>
     <attachment name="triggerAttachmentCONpopIItrig" attachTo="Confederation" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="trigger" value="conditionAttachmentCONpopII"/>
@@ -3791,16 +3791,16 @@
       <option name="when" value="after:RepublicPlace"/>
     </attachment>
     <attachment name="conditionAttachmentCONpopIII" attachTo="Confederation" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="3:7:11:15:19:23:27:31:35:39:43:47:51:55:59:640:1007:71:75:79:83:87:91:95:99"/>
+      <option name="rounds" value="3:7:11:15:19:23:27:31:35:39:43:47:51:55:59:640:1007:71:75:79:83:87:91:95:99"/>
     </attachment>
     <attachment name="conditionAttachmentEMPpopIII" attachTo="Empire" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="3:7:11:15:19:23:27:31:35:39:43:47:51:55:59:640:1007:71:75:79:83:87:91:95:99"/>
+      <option name="rounds" value="3:7:11:15:19:23:27:31:35:39:43:47:51:55:59:640:1007:71:75:79:83:87:91:95:99"/>
     </attachment>
     <attachment name="conditionAttachmentMEGpopIII" attachTo="MegaCorp" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="3:7:11:15:19:23:27:31:35:39:43:47:51:55:59:640:1007:71:75:79:83:87:91:95:99"/>
+      <option name="rounds" value="3:7:11:15:19:23:27:31:35:39:43:47:51:55:59:640:1007:71:75:79:83:87:91:95:99"/>
     </attachment>
     <attachment name="conditionAttachmentREPpopIII" attachTo="Republic" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="3:7:11:15:19:23:27:31:35:39:43:47:51:55:59:640:1007:71:75:79:83:87:91:95:99"/>
+      <option name="rounds" value="3:7:11:15:19:23:27:31:35:39:43:47:51:55:59:640:1007:71:75:79:83:87:91:95:99"/>
     </attachment>
     <attachment name="triggerAttachmentCONpopIIItrig" attachTo="Confederation" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="trigger" value="conditionAttachmentCONpopIII"/>
@@ -3823,16 +3823,16 @@
       <option name="when" value="after:RepublicPlace"/>
     </attachment>
     <attachment name="conditionAttachmentCONpopIV" attachTo="Confederation" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="4:8:12:16:20:24:28:32:36:40:44:48:52:56:60:64:68:72:76:80:84:88:92:96:100"/>
+      <option name="rounds" value="4:8:12:16:20:24:28:32:36:40:44:48:52:56:60:64:68:72:76:80:84:88:92:96:100"/>
     </attachment>
     <attachment name="conditionAttachmentEMPpopIV" attachTo="Empire" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="4:8:12:16:20:24:28:32:36:40:44:48:52:56:60:64:68:72:76:80:84:88:92:96:100"/>
+      <option name="rounds" value="4:8:12:16:20:24:28:32:36:40:44:48:52:56:60:64:68:72:76:80:84:88:92:96:100"/>
     </attachment>
     <attachment name="conditionAttachmentMEGpopIV" attachTo="MegaCorp" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="4:8:12:16:20:24:28:32:36:40:44:48:52:56:60:64:68:72:76:80:84:88:92:96:100"/>
+      <option name="rounds" value="4:8:12:16:20:24:28:32:36:40:44:48:52:56:60:64:68:72:76:80:84:88:92:96:100"/>
     </attachment>
     <attachment name="conditionAttachmentREPpopIV" attachTo="Republic" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-      <option name="turns" value="4:8:12:16:20:24:28:32:36:40:44:48:52:56:60:64:68:72:76:80:84:88:92:96:100"/>
+      <option name="rounds" value="4:8:12:16:20:24:28:32:36:40:44:48:52:56:60:64:68:72:76:80:84:88:92:96:100"/>
     </attachment>
     <attachment name="triggerAttachmentCONpopIVtrig" attachTo="Confederation" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
       <option name="trigger" value="conditionAttachmentCONpopIV"/>
@@ -13909,10 +13909,10 @@
     <property name="Kamikaze Airplanes" value="false" editable="false">
       <boolean/>
     </property>
-    <property name="Units repair at end of round" value="true" editable="false">
+    <property name="Units Repair Hits End Turn" value="true" editable="false">
       <boolean/>
     </property>
-    <property name="Units repair at beginning of round" value="false" editable="false">
+    <property name="Units Repair Hits Start Turn" value="false" editable="false">
       <boolean/>
     </property>
     <!-- in order to repair, a unit must in the presence of a unit with "repairsUnits" unit attachment -->
