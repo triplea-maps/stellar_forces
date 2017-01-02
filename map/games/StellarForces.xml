@@ -14141,11 +14141,8 @@
     <property name="Unit Placement Restrictions" value="true" editable="false">
       <boolean/>
     </property>
-    <!-- SBR Affects Unit Production has Strategic Bombing and Rockets do damage to a territory rather than directly to the player's PUs (the bank) -->
-    <property name="SBR Affects Unit Production" value="false" editable="false">
       <boolean/>
     </property>
-    <!-- Has Strategic Bombing and Rockets do damage to a specific unit rather than directly to the player's PUs or to a territory.  "SBR Affects Unit Production" must be false for this to work -->
     <property name="Damage From Bombing Done To Units Instead Of Territories" value="false" editable="false">
       <boolean/>
     </property>
